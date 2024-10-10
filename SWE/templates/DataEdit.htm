@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Testing</h1>
+	<ul>
+	For editing Vertebrae Data
+	</ul>
+	
+	<iframe src="Vert_data.htm" height="500" width="1000" title="data window"></iframe>
+
+	<form action="{{ url_for('input') }}" method="post>
+	<div>
+		<label for="Operation">Select Operation:</label>
+		<select name="Operation">
+			<option value="" disabled selected>Please choose one</option>
+			<option value="Add">Add</option>
+			<option value="Remove">Remove</option>
+		</select>
+	</div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+	</form>
+
+</body>
+</html>
